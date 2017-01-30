@@ -33,7 +33,7 @@ h1 {
 
 h1,
 h2 {
-    font-family: 'Bungee Hairline', cursive;
+    font-family: 'Just Me Again Down Here', cursive;
     font-size: 3em;
 }
 
@@ -42,7 +42,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Bungee Hairline', cursive;
+    font-family: 'Just Me Again Down Here', cursive;
     font-size: 1.5em;
 }
 
@@ -156,7 +156,7 @@ input[type="submit"],
 #tagline,
 p,
 section li {
-    font-family: 'Nixie One', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 
