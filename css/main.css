@@ -1,0 +1,281 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.edu,
+.exp,
+.skills,
+.interests,
+.inq {
+    padding: 5em 1em;
+}
+
+h1 {
+    padding-top: 1em;
+    margin-bottom: 0;
+    color: #e6ffff;
+}
+
+h1,
+h2 {
+    font-family: 'Bungee Hairline', cursive;
+    font-size: 3em;
+}
+
+h2 {
+    color: #003333;
+}
+
+h3 {
+    font-family: 'Bungee Hairline', cursive;
+    font-size: 1.5em;
+}
+
+h4,
+#nut-heading {
+    text-decoration: underline;
+}
+
+li {
+    list-style-type: none;
+    margin: 1em 0;
+}
+
+/* ------- HEADER -------- */
+.banner {
+    color: #ffffff;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), rgba(0, 0, 0, 0.55) url('../img/banner.jpg') no-repeat fixed;
+    background-size: contain;
+    background-color: #fff7e6;
+    padding: 2.5em 0;
+}
+
+@media (min-width: 960px) {
+    .banner {
+        padding: 9em 0;
+    }
+}
+
+#tagline {
+    font-size: 1.5em;
+    margin: 1.5em 0.5em;
+}
+
+.button {
+    margin-top: 1em;
+    border: 0.5px solid #ffffff;
+    padding: 0.5em;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+
+/* JQUERY ON-CLICK FORM */
+input[type="email"] {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    padding: 0.6em 3.5em;
+    border: 1px solid #d9d9d9;
+}
+
+input[type="submit"] {
+    padding: 0.65em;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: transparent;
+}
+
+
+/* NAVIGATION */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+nav {
+    margin: 3em 0;
+    width: 100%;
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+nav li {
+    display: block;
+    padding: 1.2em 0;
+    text-transform: lowercase;
+}
+
+nav li:hover {
+    background-color: #f6f7f7;
+}
+
+@media (min-width: 750px) {
+    nav li {
+        display: inline;
+        margin-right: 1.5em;
+    }
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e4e7e7;
+    padding-bottom: 1.5em;
+}
+
+h4,
+nav li a,
+.button,
+input[type="email"],
+input[type="submit"],
+#tagline,
+p,
+section li {
+    font-family: 'Nixie One', cursive;
+}
+
+
+/* --------- ABOUT --------- */
+#about-blurb {
+    margin-bottom: 3em;
+    padding: 2em;
+}
+
+.about img {
+    width: 25%;
+    height: auto;
+}
+
+.about p {
+    margin: 1em 3em;
+    line-height: 40px;
+}
+
+@media (min-width: 750px) {
+    .about p {
+        margin: 1em 6em;
+    }
+}
+
+@media (min-width: 950px) {
+    .about p {
+        margin: 2em 15em;
+    }
+}
+
+#nutshell,
+.inq {
+    background-color: #f6f7f7;
+    padding: 5em 0;
+}
+
+
+/* --------- EDUCATION -------- */
+.edu {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), rgba(0, 0, 0, 0.55) url(../img/ufbg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.edu h2,
+.skills h2 {
+    color: #ffffff;
+}
+
+.edu h3 {
+    margin-top: 2em;
+}
+
+
+/* ------------ EXPERIENCE ------------ */
+.exp ul {
+    margin-bottom: 5em;
+}
+
+
+/* ---------- SKILLS ---------------- */
+.skills {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), rgba(0, 0, 0, 0.55) url(../img/php.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.copy-container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.skills h3 {
+    margin-top: 2.5em;
+}
+
+.skills h3,
+.skills li {
+    text-align: left;
+}
+
+.skillsbar {
+    width: 10em;
+    height: 0.1em;
+    margin: 1em 0 3.8em;
+}
+
+@media (min-width: 550px) {
+    .skillsbar {
+        width: 15em;
+    }
+}
+
+@media (min-width: 900px) {
+    .skillsbar {
+        width: 25em;
+    }
+}
+
+
+/* -------- INTERESTS ------------ */
+.contact {
+    color: #000000;
+    border: 0.5px solid #000000;
+    padding: 1em 3.5em;
+}
+
+.contact:hover {
+    border: transparent;
+    background-color: #444444;
+    color: white;
+}
+
+/* ------------- FOOTER -------------- */
+footer {
+    background-color: rgba(0, 0, 0, 0.42);
+    color: #ffffff;
+    font-size: 0.7em;
+    padding: 1em;
+}
