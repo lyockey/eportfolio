@@ -103,12 +103,12 @@ nav li a:hover {
 
 /* --------- BANNER INTRO --------- */
 .about {
-    background-image: repeating-linear-gradient(45deg, rgba(0, 204, 153, 0.5), rgba(0, 204, 153, 0.5) 3px, rgba(0, 204, 153, 0.6) 3px, rgba(0, 204, 153, 0.6) 7px), url('../img/bg/headshot.png');
+    background-image: repeating-linear-gradient(45deg, rgba(0, 204, 153, 0.5), rgba(0, 204, 153, 0.5) 3px, rgba(0, 204, 153, 0.6) 3px, rgba(0, 204, 153, 0.6) 7px), url('../img/bg/headshot_left.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    padding: 1.3em;
-    text-align: center;
+    padding: 1.5em;
+    text-align: right;
 }
 
 .about h2 {
@@ -123,16 +123,47 @@ nav li a:hover {
     margin: 0;
 }
 
-@media (min-width: 750px) {
-    .about p {
-        margin: 0;
-        font-size: 1.6em;
+@media (min-width: 575px) {
+    .about {
+        background-position: center;
     }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 750px) {
+    .about h2 {
+        font-size: 4em;
+        margin-bottom: 0;
+    }
+
     .about p {
         margin: 0;
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 850px) {
+    .about {
+        background-position: top;
+        padding-bottom: 5em;
+    }
+
+    .about h2 {
+        font-size: 6em;
+        margin: 1em 0 0;
+    }
+
+    .about p {
+        padding: 0 0 0 15em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .about {
+        background-position: center;
+    }
+
+    .about p {
+        padding-left: 25em;
     }
 }
 
