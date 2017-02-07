@@ -173,13 +173,23 @@ nav li a:hover {
     width: 45%;
 }
 
+@media (min-width: 450px) {
+    .services img {
+        width: 35%;
+    }
+}
+
 @media (min-width: 650px) {
     .services img {
-        width: 30%;
+        width: 20%;
     }
 }
 
 @media (min-width: 850px) {
+    .services {
+        width: 75%;
+    }
+
     #webdesign,
     #graphicdesign,
     #digitalmarketing {
@@ -189,25 +199,47 @@ nav li a:hover {
     }
 
     .services img {
-        width: 60%;
+        width: 40%;
     }
+}
+
+#action_buttons {
+    clear: both;
+    padding: 3em 5em;
 }
 
 
 /* -------- CONTACT ------------ */
 .contact {
-    clear: both;
-    background-color: #f6f7f7;
-    padding: 5em 0;
+    background-color: #99ccff;
+    padding: 2em 0 5em;
 }
 
-.contactbutton {
-    color: #ffb84d;
-    border: 0.5px solid #ffb84d;
-    padding: 1em 3.5em;
+.contact h2 {
+    color: #ffffff;
 }
 
-.contactbutton:hover {
+.button {
+    width: 100%;
+    display: block;
+    padding: 1em 0;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+    background-color: #ffb84d;
+    border-radius: 0.5em;
+}
+
+@media (min-width: 475px) {
+    .button {
+        color: #ffffff;
+        border: 0.5px solid #ffb84d;
+        padding: 1em 3.5em;
+        font-size: 1em;
+        display: inline;
+    }
+}
+
+.button:hover {
     border: transparent;
     background-color: #ffb84d;
     color: white;
