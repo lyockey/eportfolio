@@ -1,3 +1,4 @@
+/* ----- DOCUMENT & CLEAR FIX ------ */
 html {
     box-sizing: border-box;
 }
@@ -10,6 +11,7 @@ html {
 
 body {
     text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .container {
@@ -17,15 +19,32 @@ body {
     margin: auto;
 }
 
+
+/* ----- HEADINGS & GENERAL TEXT FORMATTING ----- */
 h1,
-h2 {
-    font-family: 'Just Me Again Down Here', cursive;
-    font-size: 3em;
+#tagline {
+    text-align: center;
 }
 
-h3 {
-    font-family: 'Just Me Again Down Here', cursive;
-    font-size: 1.5em;
+h1 {
+    margin: 0;
+    font-size: 3.5em;
+    color: #00cc99;
+}
+
+#tagline {
+    margin-top: -0.5em;
+    font-size: 1.25em;
+}
+
+h1,
+h2 {
+    font-family: 'Cookie', cursive;
+}
+
+h2 {
+    font-size: 2.75em;
+    color: #ffb84d;
 }
 
 li {
@@ -33,13 +52,8 @@ li {
     margin: 1em 0;
 }
 
-/* ------- HEADER -------- */
-#tagline {
-    font-size: 1.5em;
-}
 
-
-/* NAVIGATION */
+/* ------------NAVIGATION ------------- */
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -81,42 +95,69 @@ nav li a {
     padding-bottom: 1.5em;
 }
 
-h4,
-nav li a,
-.button,
-input[type="email"],
-input[type="submit"],
-#tagline,
-p,
-section li {
-    font-family: 'Open Sans Condensed', sans-serif;
+nav li a:hover {
+    color: #ffb84d;
+
 }
 
 
-/* --------- ABOUT --------- */
+/* --------- BANNER INTRO --------- */
+.about {
+    background-image: repeating-linear-gradient(45deg, rgba(0, 204, 153, 0.5), rgba(0, 204, 153, 0.5) 3px, rgba(0, 204, 153, 0.6) 3px, rgba(0, 204, 153, 0.6) 7px), url('../img/bg/headshot.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 1.3em;
+    text-align: center;
+}
+
+.about h2 {
+    color: #ffffff;
+}
+
 .about p {
-    line-height: 35px;
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0;
 }
 
 @media (min-width: 750px) {
     .about p {
-        margin: 1em 6em;
+        margin: 0;
+        font-size: 1.6em;
     }
 }
 
 @media (min-width: 950px) {
     .about p {
-        margin: 2em 15em;
+        margin: 0;
     }
 }
 
+
+/* -------- SERVICES ---------- */
+
+@media (min-width: 600px) {
+    #webdesign,
+    #graphicdesign,
+    #digitalmarketing {
+        width: calc(100 / 3 - 1em);
+    }
+}
+
+.services img {
+    width: 45%;
+}
+
+
+/* -------- CONTACT ------------ */
 .contact {
     background-color: #f6f7f7;
     padding: 5em 0;
 }
 
-
-/* -------- CONTACT ------------ */
 .contactbutton {
     color: #000000;
     border: 0.5px solid #000000;
