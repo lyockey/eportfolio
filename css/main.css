@@ -38,7 +38,8 @@ h1 {
 }
 
 h1,
-h2 {
+h2,
+blockquote {
     font-family: 'Cookie', cursive;
 }
 
@@ -47,11 +48,20 @@ h2 {
     color: #99ccff;
 }
 
+p {
+    font-size: 1.3em;
+    color: #595959;
+    line-height: 38px;
+}
+
 li {
     list-style-type: none;
     margin: 1em 0;
 }
 
+a:hover {
+    cursor: pointer;
+}
 
 /* ------------NAVIGATION ------------- */
 .visuallyhidden {
@@ -243,6 +253,26 @@ nav li a:hover {
 }
 
 
+/* ----- BIO ---------- */
+.bio {
+    padding: 5em;
+}
+
+.bio blockquote {
+    color: #ffb84d;
+    font-size: 2em;
+}
+
+#quote-src {
+    margin-top: -1em;
+    font-size: 1em;
+}
+
+.bio p {
+    margin-bottom: 2.5em;
+}
+
+
 /* -------- CONTACT ------------ */
 .contact {
     background-color: #99ccff;
@@ -266,7 +296,6 @@ nav li a:hover {
 @media (min-width: 475px) {
     .button {
         color: #ffffff;
-        border: 0.5px solid #ffb84d;
         padding: 1em 3.5em;
         font-size: 1em;
         display: inline;
@@ -274,8 +303,7 @@ nav li a:hover {
 }
 
 .button:hover {
-    border: transparent;
-    background-color: #ffb84d;
+    background-color: #ffad33;
     color: white;
 }
 
