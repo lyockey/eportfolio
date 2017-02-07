@@ -29,7 +29,7 @@ h1,
 h1 {
     margin: 0;
     font-size: 3.5em;
-    color: #00cc99;
+    color: #99ccff;
 }
 
 #tagline {
@@ -44,7 +44,7 @@ h2 {
 
 h2 {
     font-size: 2.75em;
-    color: #ffb84d;
+    color: #99ccff;
 }
 
 li {
@@ -103,7 +103,7 @@ nav li a:hover {
 
 /* --------- BANNER INTRO --------- */
 .about {
-    background-image: repeating-linear-gradient(45deg, rgba(0, 204, 153, 0.5), rgba(0, 204, 153, 0.5) 3px, rgba(0, 204, 153, 0.6) 3px, rgba(0, 204, 153, 0.6) 7px), url('../img/bg/headshot_left.png');
+    background-image: repeating-linear-gradient(45deg, rgba(153, 204, 255, 0.5), rgba(153, 204, 255, 0.5) 3px, rgba(153, 204, 255, 0.6) 3px, rgba(153, 204, 255, 0.6) 7px), url('../img/bg/headshot_left.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -169,35 +169,47 @@ nav li a:hover {
 
 
 /* -------- SERVICES ---------- */
+.services img {
+    width: 45%;
+}
 
-@media (min-width: 600px) {
-    #webdesign,
-    #graphicdesign,
-    #digitalmarketing {
-        width: calc(100 / 3 - 1em);
+@media (min-width: 650px) {
+    .services img {
+        width: 30%;
     }
 }
 
-.services img {
-    width: 45%;
+@media (min-width: 850px) {
+    #webdesign,
+    #graphicdesign,
+    #digitalmarketing {
+        display: inline;
+        float: left;
+        width: 33%;
+    }
+
+    .services img {
+        width: 60%;
+    }
 }
 
 
 /* -------- CONTACT ------------ */
 .contact {
+    clear: both;
     background-color: #f6f7f7;
     padding: 5em 0;
 }
 
 .contactbutton {
-    color: #000000;
-    border: 0.5px solid #000000;
+    color: #ffb84d;
+    border: 0.5px solid #ffb84d;
     padding: 1em 3.5em;
 }
 
 .contactbutton:hover {
     border: transparent;
-    background-color: #444444;
+    background-color: #ffb84d;
     color: white;
 }
 
