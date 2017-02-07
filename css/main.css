@@ -111,7 +111,8 @@ nav li a:hover {
     text-align: right;
 }
 
-.about h2 {
+.about h2,
+.portfolio h2 {
     color: #ffffff;
 }
 
@@ -169,8 +170,17 @@ nav li a:hover {
 
 
 /* -------- SERVICES ---------- */
+#graphicdesign,
+#digitalmarketing {
+    margin-top: 3em;
+}
+
 .services img {
-    width: 45%;
+    width: 25%;
+}
+
+.services ul {
+    padding-left: 0;
 }
 
 @media (min-width: 450px) {
@@ -195,17 +205,41 @@ nav li a:hover {
     #digitalmarketing {
         display: inline;
         float: left;
-        width: 33%;
+        width: 30%;
+    }
+
+    #webdesign {
+        margin-top: 3em;
+    }
+
+    #graphicdesign {
+        margin: 3em 1.5em;
     }
 
     .services img {
         width: 40%;
+    }
+
+    .services ul {
+        padding: 0 3em;
+    }
+
+    .services ul li {
+        text-align: center;
+        list-style-type: none;
     }
 }
 
 #action_buttons {
     clear: both;
     padding: 3em 5em;
+}
+
+
+/* ----- PORTFOLIO PREVIEW ----- */
+.portfolio {
+    background-color: #99ccff;
+    padding: 2em 5em;
 }
 
 
