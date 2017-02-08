@@ -39,7 +39,8 @@ h1 {
 
 h1,
 h2,
-blockquote {
+blockquote,
+.resume h3 {
     font-family: 'Cookie', cursive;
 }
 
@@ -245,44 +246,6 @@ nav li a:hover {
     padding: 3em 5em;
 }
 
-
-/* ----- PORTFOLIO PREVIEW ----- */
-.portfolio {
-    background-color: #99ccff;
-    padding: 2em 5em;
-}
-
-
-/* ----- BIO ---------- */
-.bio {
-    padding: 5em;
-}
-
-.bio blockquote {
-    color: #ffb84d;
-    font-size: 2em;
-}
-
-#quote-src {
-    margin-top: -1em;
-    font-size: 1em;
-}
-
-.bio p {
-    margin-bottom: 2.5em;
-}
-
-
-/* -------- CONTACT ------------ */
-.contact {
-    background-color: #99ccff;
-    padding: 2em 0 5em;
-}
-
-.contact h2 {
-    color: #ffffff;
-}
-
 .button {
     width: 100%;
     display: block;
@@ -307,10 +270,142 @@ nav li a:hover {
     color: white;
 }
 
+
+/* ----- PORTFOLIO PREVIEW ----- */
+.portfolio {
+    background-color: #99ccff;
+    padding: 2em 5em;
+}
+
+
+/* ----- BIO ---------- */
+.bio {
+    padding: 5em;
+}
+
+.bio blockquote,
+.resume h3 {
+    color: #ffb84d;
+    font-size: 2em;
+}
+
+#quote-src {
+    margin-top: -1em;
+    font-size: 1em;
+}
+
+.bio p {
+    margin-bottom: 2.5em;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 25em;
+    border: 0;
+    border-top: 1px solid #99ccff;
+    margin: 1em auto 2.5em;
+    padding: 0;
+}
+
+
+/* -------- SHOWCASE ----------- */
+.showcase {
+    background-image: repeating-linear-gradient(45deg, rgba(255, 184, 77, 0.8), rgba(255, 184, 77, 0.8) 3px, rgba(255, 184, 77, 0.9) 3px, rgba(255, 184, 77, 0.9) 7px), url('../img/bg/showcase.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2em 0;
+}
+
+.showcase h3 a {
+    color: #ffffff;
+    font-size: 1.5em;
+    padding-bottom: 0;
+}
+
+
+/* -------- RESUME ------------- */
+.resume h4 {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #595959;
+    line-height: 35px;
+}
+
+.resume h3,
+.resume h4,
+.resume h5,
+.resume p {
+    margin: 0;
+}
+
+.resume h3 {
+    padding-bottom: 0.5em;
+}
+
+.resume h5 {
+    font-size: 1.3em;
+    color: #595959;
+    padding-bottom: 0.5em;
+}
+
+.resume p {
+    padding-bottom: 2em;
+}
+
+.resume ul {
+    padding: 0 4em 1em;
+}
+
+.resume ul li {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+/* -------- CONTACT ------------ */
+.contact {
+    background-color: #99ccff;
+    padding: 2em 0 5em;
+}
+
+.contact h2 {
+    margin-bottom: 0.5em;
+}
+
+.contact h2,
+.contact p {
+    color: #ffffff;
+}
+
+.contact p {
+    display: inline;
+    padding: 0 1em;
+    font-size: 1.2em;
+}
+
+.contact-info {
+    margin-bottom: 1em;
+}
+
+.contact a img {
+    margin-bottom: 2em;
+}
+
+
 /* ------------- FOOTER -------------- */
 footer {
-    background-color: rgba(0, 0, 0, 0.42);
-    color: #ffffff;
+    background-color: #595959;
     font-size: 0.7em;
     padding: 1em;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+.contact p a,
+footer p a {
+    color: #ffffff;
 }
