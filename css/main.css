@@ -78,7 +78,7 @@ a:hover {
 }
 
 nav {
-    margin: 3em 0;
+    margin: 1.75em 0 3em;
     width: 100%;
 }
 
@@ -112,6 +112,14 @@ nav li a:hover {
 
 }
 
+.blog-link {
+    color: #ffb84d;
+    font-weight: bold;
+}
+
+.blog-link:hover {
+    color: #ffad33;
+}
 
 /* --------- BANNER INTRO --------- */
 .about {
@@ -121,10 +129,11 @@ nav li a:hover {
     background-position: bottom;
     padding: 1.5em;
     text-align: right;
+    box-shadow: 5px 10px 15px #e0e2e5;
+    -webkit-box-shadow: 5px 10px 15px #e0e2e5;
 }
 
-.about h2,
-.portfolio h2 {
+.about h2 {
     color: #ffffff;
 }
 
@@ -180,11 +189,33 @@ nav li a:hover {
     }
 }
 
+@media (min-width: 1450px) {
+    .about {
+        background-position: center;
+        padding: 8em 2em;
+    }
+
+    .about p {
+        padding-left: 45em;
+    }
+}
+
 
 /* -------- SERVICES ---------- */
+.services {
+    margin-top: 2.5em;
+}
+
 #graphicdesign,
 #digitalmarketing {
     margin-top: 3em;
+    text-align: center;
+}
+
+.services h3 {
+    color: #595959;
+    font-weight: bold;
+    font-size: 1.7em;
 }
 
 .services img {
@@ -209,7 +240,7 @@ nav li a:hover {
 
 @media (min-width: 850px) {
     .services {
-        width: 75%;
+        width: 100%;
     }
 
     #webdesign,
@@ -244,7 +275,8 @@ nav li a:hover {
 
 #action_buttons {
     clear: both;
-    padding: 3em 5em;
+    padding: 3em 0;
+    margin: 0 auto 2.5em;
 }
 
 .button {
@@ -274,8 +306,10 @@ nav li a:hover {
 
 /* ----- PORTFOLIO PREVIEW ----- */
 .portfolio {
-    background-color: #99ccff;
+    background-color: #595959;
     padding: 2em 5em;
+    box-shadow: 5px 10px 15px #e0e2e5;
+    -webkit-box-shadow: 5px 10px 15px #e0e2e5;
 }
 
 
@@ -284,13 +318,24 @@ nav li a:hover {
     padding: 0 5em;
 }
 
+@media (min-width: 800px) {
+    .portfolio-page-content p {
+        padding: 0 8em;
+    }
+}
+
 #portfolio-contact {
     color: #ffb84d;
 }
 
 #webportfolio,
 #graphicportfolio {
-    padding: 1em 5em;
+    padding: 1.8em 5em;
+}
+
+#webportfolio p,
+#graphicportfolio p {
+    margin-bottom: 1em;
 }
 
 #webportfolio img,
@@ -304,6 +349,31 @@ nav li a:hover {
 #webportfolio img:hover,
 #graphicportfolio img:hover {
     opacity: 0.7;
+}
+
+#graphicportfolio {
+    margin-bottom: 5em;
+}
+
+.portfolio-page-content h3 {
+    font-family: "Cookie", cursive;
+    color: #ffb84d;
+    font-size: 2em;
+}
+
+.portfolio-page-content ul {
+    padding-left: 0;
+    margin-bottom: 2em;
+}
+
+.portfolio-page-content li {
+    display: inline;
+    padding: 0 2em;
+}
+
+.program {
+    font-weight: bolder;
+    padding-right: 0;
 }
 
 /* ----- BIO ---------- */
@@ -344,12 +414,13 @@ hr {
     background-size: cover;
     background-position: center;
     padding: 2em 0;
+    font-family: "Cookie", cursive;
 }
 
 .showcase h3 a {
     color: #ffffff;
-    font-size: 1.5em;
     padding-bottom: 0;
+    font-size: 3em;
 }
 
 
@@ -421,6 +492,7 @@ hr {
     margin-bottom: 2em;
 }
 
+/* ------------- CONTACT FORM -------- */
 
 /* ------------- FOOTER -------------- */
 footer {
@@ -431,6 +503,7 @@ footer {
 
 footer p {
     color: #ffffff;
+    font-size: 1.2em;
 }
 
 .contact p a,

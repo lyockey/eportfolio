@@ -8,34 +8,39 @@
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="css/slimmenu.min.css" type="text/css">
     <link href="css/jquery.toast.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
     <header>
-        <nav>
-            <h1><a href="index.html">Lauren Yockey</a></h1>
+        <section class="logo-elements">
+            <h1 id="logo"><a href="index.html">Lauren Yockey</a></h1>
             <p id="tagline">Web Developer &amp; Brand Strategist</p>
+        </section>
+        <nav id="navigation" class="slimmenu">
             <h2 class="visuallyhidden">Navigation</h2>
             <ul>
-                <li><a href="#about" class="nav-click">About</a>
-                </li><li><a href="#services" class="nav-click">Services</a>
+                <li><a href="#logo" class="nav-click">Home</a>
                 </li><li><a href="#resume" class="nav-click">Resume</a>
                 </li><li><a href="portfolio.html">Portfolio</a>
-                </li><li><a href="#contact" class="nav-click">Contact</a></li>
+                </li><li><a href="#bio" class="nav-click">Bio</a>
+                </li><li><a href="#contact" class="nav-click">Contact</a>
+                </li>
+            <li><a href="http://laurenyockey.com/wie/blog/" target="_blank" class="blog-link">Blog</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="about container" id="about">
+        <section class="about" id="about">
             <div id="about-blurb">
                 <h2>Meet the Designer.</h2>
                 <p>I’m a DIYer in the Digital Age. What does that mean, you ask? Good question! I believe that a great digital product is one that doesn’t cut corners. Being a digital DIYer means I can (and will) do it all - graphic design, web development and digital marketing - from scratch to help bring your vision to life.</p>
             </div>
         </section>
         <section class="services container" id="services">
-            <h2>Here's what I can do for you.</h2>
+            <h2 class="visuallyhidden">Services</h2>
 
             <article id="webdesign">
                 <img src="img/icons/web.png" alt="Web Design" title="Web Design">
@@ -72,18 +77,18 @@
                 <a href="img/pdf/portfolio_resume.pdf" class="button" download>Download My Resume</a>
             </article>
         </section>
-        <section class="portfolio container" id="portfolio">
+        <section class="portfolio" id="portfolio">
             <h2>Recent Projects</h2>
             <article class="portfolio-items" id="gallery">
                 <img src="img/sample/crossroads.png" alt="Crossroads Animal Clinic Website" title="Crossroads Animal Clinic Website" class="thumbnail" data-caption="This is a test"/>
                 <img src="img/sample/xjoy_styletile.png" alt="Xtraordinary Joy Style Tile" title="Xtraordinary Joy Style Tile" class="thumbnail"/>
                 <img src="img/sample/buie.png" alt="SF Drambuie Website" title="SF Drambuie Website" class="thumbnail" />
                 <img src="img/sample/leaky.png" alt="Leaky Cauldron Website" title="Leaky Cauldron Website" class="thumbnail" />
-                <img src="img/sample/imc_facebook_1.jpg" alt="Infomedia Local Facebook Banner" title="Infomedia Local Facebook Banner" class="thumbnail" />
+                <img src="img/sample/imc_facebook_1.png" alt="Infomedia Local Facebook Banner" title="Infomedia Local Facebook Banner" class="thumbnail" />
             </article>
         </section>
         <section class="bio container" id="bio">
-            <h2>About me</h2>
+            <h2>About Lauren</h2>
             <blockquote>"Quality is not an act, it is a habit." <span id="quote-src">- Aristotle</span></blockquote>
             <p>I am a final-semester graduate student studying web design and online communication through the University of Florida's Master's in Mass Communication program. I have spent the last six years cultivating my knack for storytelling -- whether verbally through public relations campaigns, or visually with web and graphic design. I am passionate about delivering a quality, handmade product that effectively tells the story of your brand.</p>
             <a href="portfolio.html" class="button" id="portfolio-button">View my Portfolio</a>
@@ -113,28 +118,28 @@
                     <li>Copywriter &amp; editor</li>
                 </ul>
             </article>
-            <article class="showcase" id="showcase">
-                <h3><a href="http://wdocshowcase.jou.ufl.edu/students/lauren-yockey/" target="_blank">Check out my featured work.</a></h3>
-            </article>
         </section>
-        <section class="contact container" id="contact">
+        <section class="showcase" id="showcase">
+            <h3><a href="http://wdocshowcase.jou.ufl.edu/students/lauren-yockey/" target="_blank">Check out my featured work.</a></h3>
+        </section>
+        <section class="contact" id="contact">
             <h2>Let's get in touch.</h2>
             <a href="mailto:laurenyockey@gmail.com"><img src="img/icons/email.png" alt="Email" title="Email" /></a>
             <a href="tel:8504998789"><img src="img/icons/phone.png" alt="Call" title="Call" /></a>
             <a href="https://www.linkedin.com/in/laurenyockey/"><img src="img/icons/linkedin.png" alt="LinkedIn" title="LinkedIn" /></a>
             <a href="https://github.com/lyockey"><img src="img/icons/github.png" alt="GitHub" title="GitHub" /></a>
             <a href="http://www.laurenyockey.com/wie"><img src="img/icons/wordpress.png" alt="WordPress" title="WordPress" /></a>
-            <div id="instafeed"></div>
+            <!-- <div id="instafeed"></div> -->
         </section>
     </main>
-    <footer class="container">
+    <footer>
         <p>Made with &hearts; by Lauren Yockey. &copy; All Rights Reserved. <a href="mailto:laurenyockey@gmail.com">laurenyockey@gmail.com</a> / <a href="tel:8504998789">850.499.8789</a></p>
     </footer>
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.slimmenu.min.js"></script>
     <script src="js/animatescroll.min.js"></script>
     <script src="js/jquery.toast.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="js/slick-lightbox.min.js"></script>
     <script type="text/javascript" src="js/instafeed.min.js"></script>
     <script src="js/main.js"></script>
 </body>
