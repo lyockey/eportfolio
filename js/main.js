@@ -4,12 +4,13 @@ $(document).ready(function () {
 
 ////////// ANIMATE SCROLL /////////////
     $('nav').on('click', 'a', function (event) {
-        event.preventDefault();
-
-        $(this.hash).animatescroll({
-            scrollSpeed: 3000,
-            easing: 'easeInOutBack'
-        });
+        if ($(event.target).is('.nav-click')) {
+            event.preventDefault();
+            $(this.hash).animatescroll({
+                scrollSpeed: 3000,
+                easing: 'easeInOutBack'
+            });
+        }
     });
 
 ///////// JQUERY TOAST ////////////
@@ -76,4 +77,7 @@ var feed = new Instafeed({
     template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>',
     limit: 6
 });
-feed.run();
+
+if (Instafeed !== null) {
+    feed.run();
+}

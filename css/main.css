@@ -26,14 +26,15 @@ h1,
     text-align: center;
 }
 
-h1 {
+h1 a {
     margin: 0;
-    font-size: 3.5em;
+    font-size: 2em;
     color: #99ccff;
+    text-decoration: none;
 }
 
 #tagline {
-    margin-top: -0.5em;
+    margin-top: -1.55em;
     font-size: 1.25em;
 }
 
@@ -277,6 +278,33 @@ nav li a:hover {
     padding: 2em 5em;
 }
 
+
+/* ------- PORTFOLIO PAGE -------- */
+.portfolio-page-content p {
+    padding: 0 5em;
+}
+
+#portfolio-contact {
+    color: #ffb84d;
+}
+
+#webportfolio,
+#graphicportfolio {
+    padding: 1em 5em;
+}
+
+#webportfolio img,
+#graphicportfolio img {
+    height: 12em;
+    width: auto;
+    display: inline;
+    border-radius: 0.7em;
+}
+
+#webportfolio img:hover,
+#graphicportfolio img:hover {
+    opacity: 0.7;
+}
 
 /* ----- BIO ---------- */
 .bio {

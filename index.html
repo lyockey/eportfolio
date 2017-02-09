@@ -15,15 +15,15 @@
 <body>
     <header>
         <nav>
-            <h1>Lauren Yockey</h1>
+            <h1><a href="index.html">Lauren Yockey</a></h1>
             <p id="tagline">Web Developer &amp; Brand Strategist</p>
             <h2 class="visuallyhidden">Navigation</h2>
             <ul>
-                <li><a href="#about">About</a>
-                </li><li><a href="#services">Services</a>
-                </li><li><a href="#resume">Resume</a>
-                </li><li><a href="#portfolio">Portfolio</a>
-                </li><li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="nav-click">About</a>
+                </li><li><a href="#services" class="nav-click">Services</a>
+                </li><li><a href="#resume" class="nav-click">Resume</a>
+                </li><li><a href="portfolio.html">Portfolio</a>
+                </li><li><a href="#contact" class="nav-click">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -75,11 +75,11 @@
         <section class="portfolio container" id="portfolio">
             <h2>Recent Projects</h2>
             <article class="portfolio-items" id="gallery">
-                <img src="img/sample/crossroads.png" alt="Crossroads Animal Clinic Website" title="Crossroads Animal Clinic Website" class="preview"/>
-                <img src="img/sample/xjoy_styletile.png" alt="Xtraordinary Joy Style Tile" title="Xtraordinary Joy Style Tile" class="preview"/>
-                <img src="img/sample/buie.png" alt="SF Drambuie Website" title="SF Drambuie Website" class="preview" />
-                <img src="img/sample/leaky.png" alt="Leaky Cauldron Website" title="Leaky Cauldron Website" class="preview" />
-                <img src="img/sample/imc_facebook_1.jpg" alt="Infomedia Local Facebook Banner" title="Infomedia Local Facebook Banner" class="preview" />
+                <img src="img/sample/crossroads.png" alt="Crossroads Animal Clinic Website" title="Crossroads Animal Clinic Website" class="thumbnail" data-caption="This is a test"/>
+                <img src="img/sample/xjoy_styletile.png" alt="Xtraordinary Joy Style Tile" title="Xtraordinary Joy Style Tile" class="thumbnail"/>
+                <img src="img/sample/buie.png" alt="SF Drambuie Website" title="SF Drambuie Website" class="thumbnail" />
+                <img src="img/sample/leaky.png" alt="Leaky Cauldron Website" title="Leaky Cauldron Website" class="thumbnail" />
+                <img src="img/sample/imc_facebook_1.jpg" alt="Infomedia Local Facebook Banner" title="Infomedia Local Facebook Banner" class="thumbnail" />
             </article>
         </section>
         <section class="bio container" id="bio">
@@ -134,6 +134,7 @@
     <script src="js/animatescroll.min.js"></script>
     <script src="js/jquery.toast.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/slick-lightbox.min.js"></script>
     <script type="text/javascript" src="js/instafeed.min.js"></script>
     <script src="js/main.js"></script>
 </body>
