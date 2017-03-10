@@ -394,7 +394,8 @@ nav li a:hover {
     margin-bottom: 5em;
 }
 
-.portfolio-page-content h3 {
+.portfolio-page-content h3,
+.client_needs h3 {
     font-family: "Cookie", cursive;
     color: #ffb84d;
     font-size: 2em;
@@ -550,6 +551,21 @@ hr {
     }
 }
 
+.client_needs {
+    margin-bottom: 5em;
+}
+
+.client_needs p {
+    padding: 0 5em;
+}
+
+.client_needs p:nth-child(4) {
+    margin-bottom: 2em;
+}
+
+#webdesign_services {
+    margin-top: 5em;
+}
 
 /* ------------- FOOTER -------------- */
 footer {
