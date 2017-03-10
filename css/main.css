@@ -149,11 +149,24 @@ nav li a:hover {
     -webkit-box-shadow: 5px 10px 15px #e0e2e5;
 }
 
-.about h2 {
+.services-intro {
+    background-image: repeating-linear-gradient(45deg, rgba(255, 173, 51, 0.5), rgba(255, 173, 51, 0.5) 3px, rgba(255, 173, 51, 0.6) 3px, rgba(255, 173, 51, 0.6) 7px), url('../img/bg/php.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 1.5em;
+    text-align: right;
+    box-shadow: 5px 10px 15px #e0e2e5;
+    -webkit-box-shadow: 5px 10px 15px #e0e2e5;
+}
+
+.about h2,
+.services-intro h2 {
     color: #ffffff;
 }
 
-.about p {
+.about p,
+.services-intro p {
     line-height: 30px;
     color: #ffffff;
     font-size: 1.3em;
@@ -162,56 +175,66 @@ nav li a:hover {
 }
 
 @media (min-width: 575px) {
-    .about {
+    .about,
+    .services-intro {
         background-position: center;
     }
 }
 
 @media (min-width: 750px) {
-    .about h2 {
+    .about h2,
+    .services-intro h2 {
         font-size: 4em;
         margin-bottom: 0;
     }
 
-    .about p {
+    .about p,
+    .services-intro p {
         margin: 0;
         font-size: 1.4em;
     }
 }
 
 @media (min-width: 850px) {
-    .about {
+    .about,
+    .services-intro {
         background-position: top;
         padding-bottom: 5em;
     }
 
-    .about h2 {
+    .about h2,
+    .services-intro h2 {
         font-size: 6em;
         margin: 1em 0 0;
     }
 
-    .about p {
+    .about p,
+    .services-intro p {
         padding: 0 0 0 15em;
     }
 }
 
 @media (min-width: 1000px) {
-    .about {
+    .about,
+    .services-intro {
         background-position: center;
     }
 
-    .about p {
+    .about p,
+    .services-intro p {
         padding-left: 25em;
     }
 }
 
 @media (min-width: 1450px) {
-    .about {
+    .about,
+    .services-intro {
         background-position: center;
         padding: 8em 2em;
     }
 
-    .about p {
+    .about p,
+    .services-intro p {
         padding-left: 45em;
     }
 }
@@ -516,7 +539,8 @@ hr {
     margin-bottom: 2em;
 }
 
-/* ------------- CONTACT FORM -------- */
+/* ------------- SERVICES PAGE -------- */
+
 
 /* ------------- FOOTER -------------- */
 footer {
