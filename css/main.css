@@ -48,7 +48,9 @@ h1 a {
 h1,
 h2,
 blockquote,
-.resume h3 {
+.resume h3,
+.client_needs h3,
+.deliverables-title {
     font-family: 'Cookie', cursive;
 }
 
@@ -394,8 +396,7 @@ nav li a:hover {
     margin-bottom: 5em;
 }
 
-.portfolio-page-content h3,
-.client_needs h3 {
+.portfolio-page-content h3 {
     font-family: "Cookie", cursive;
     color: #ffb84d;
     font-size: 2em;
@@ -551,11 +552,20 @@ hr {
     }
 }
 
+/* ---- Client Needs Blurb ---- */
 .client_needs {
     margin-bottom: 5em;
 }
 
-.client_needs p {
+.client_needs h3 {
+    font-size: 3em;
+    color: #ffad33;
+}
+
+.client_needs p,
+#webdesign_services p,
+#graphicdesign_services p,
+#digmark_services p {
     padding: 0 5em;
 }
 
@@ -563,9 +573,47 @@ hr {
     margin-bottom: 2em;
 }
 
+
+/* --- Web Design Process --- */
 #webdesign_services {
     margin-top: 5em;
 }
+
+#webdesign_services h3,
+#graphicdesign_services h3,
+#digmark_services h3 {
+    font-size: 2em;
+}
+
+.deliverables-title {
+    color: #99ccff;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+.deliverable-items {
+    padding-left: 0;
+}
+
+.deliverable-items li {
+    font-size: 1.3em;
+    display: inline;
+}
+
+.deliverable-items > li:not(:first-child) {
+    padding-left: 0.5em;
+}
+
+.pricing h5 {
+    font-size: 1.5em;
+}
+
+#price-color-1,
+#price-color-2 {
+    color: #ffad33;
+    font-weight: bold;
+}
+
 
 /* ------------- FOOTER -------------- */
 footer {
