@@ -22,8 +22,14 @@ body {
 
 /* ----- HEADINGS & GENERAL TEXT FORMATTING ----- */
 h1,
-#tagline {
+#tagline
+#tagline-contact {
     text-align: center;
+}
+
+#tagline-contact {
+    font-size: 0.95em;
+    margin-top: 0;
 }
 
 h1 a {
@@ -36,6 +42,7 @@ h1 a {
 #tagline {
     margin-top: -1.55em;
     font-size: 1.25em;
+    margin-bottom: 0;
 }
 
 h1,
@@ -54,6 +61,15 @@ p {
     font-size: 1.3em;
     color: #595959;
     line-height: 38px;
+}
+
+.link {
+    color: #ffb84d;
+}
+
+.nolink {
+    text-decoration: none;
+    color: #595959;
 }
 
 li {
@@ -460,6 +476,14 @@ hr {
 .resume ul li {
     text-align: center;
     font-size: 1.2em;
+}
+
+.awards h4 {
+    margin-bottom: 0.5em;
+}
+
+.projects {
+    padding-bottom: 3em;
 }
 
 

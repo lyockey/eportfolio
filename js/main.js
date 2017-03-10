@@ -1,5 +1,3 @@
-/* global Instafeed */
-
 $(document).ready(function () {
 
 ////////// SLIM MENU /////////////////
@@ -79,16 +77,3 @@ $(document).ready(function () {
     });
 
 }); //END DOC.READY
-
-var feed = new Instafeed({
-    get: 'user',
-    userId: '1251480884',
-    accessToken: '1251480884.1677ed0.1faccaf9954c4efd96fd4f04602ee2bc',
-    sortBy: 'most-recent',
-    template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>',
-    limit: 6
-});
-
-if (Instafeed !== null) {
-    feed.run();
-}
