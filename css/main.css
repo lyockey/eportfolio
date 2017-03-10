@@ -540,6 +540,15 @@ hr {
 }
 
 /* ------------- SERVICES PAGE -------- */
+.services-content img {
+    width: 35%;
+}
+
+@media (min-width: 750px) {
+    .services-content img {
+        width: 25%;
+    }
+}
 
 
 /* ------------- FOOTER -------------- */
