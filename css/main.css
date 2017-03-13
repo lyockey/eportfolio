@@ -608,12 +608,8 @@ hr {
     font-size: 1.5em;
 }
 
-#price-color-1,
-#price-color-2,
-#price-color-3,
-#price-color-4 {
+.pricing h5 > span {
     color: #ffad33;
-    font-weight: bold;
 }
 
 
