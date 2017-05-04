@@ -35,7 +35,7 @@ h1,
 h1 a {
     margin: 0;
     font-size: 2em;
-    color: #99ccff;
+    color: #005580;
     text-decoration: none;
 }
 
@@ -47,16 +47,20 @@ h1 a {
 
 h1,
 h2,
+.showcase {
+    font-family: 'La Belle Aurore', cursive;
+}
+
 blockquote,
 .resume h3,
 .client_needs h3,
 .deliverables-title {
-    font-family: 'Cookie', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 h2 {
     font-size: 2.75em;
-    color: #99ccff;
+    color: #005580;
 }
 
 p {
@@ -141,7 +145,7 @@ nav li a:hover {
 
 /* --------- BANNER INTRO --------- */
 .about {
-    background-image: repeating-linear-gradient(45deg, rgba(153, 204, 255, 0.5), rgba(153, 204, 255, 0.5) 3px, rgba(153, 204, 255, 0.6) 3px, rgba(153, 204, 255, 0.6) 7px), url('../img/bg/headshot_left.png');
+    background-image: repeating-linear-gradient(45deg, rgba(0, 85, 128, 0.5), rgba(0, 85, 128, 0.5) 3px, rgba(0, 85, 128, 0.6) 3px, rgba(0, 85, 128, 0.6) 7px), url('../img/bg/headshot_left.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -347,12 +351,15 @@ nav li a:hover {
 
 /* ----- PORTFOLIO PREVIEW ----- */
 .portfolio {
-    background-color: #595959;
+    background: radial-gradient(#005580, #004466, #262626);
     padding: 2em 5em;
     box-shadow: 5px 10px 15px #e0e2e5;
     -webkit-box-shadow: 5px 10px 15px #e0e2e5;
 }
 
+.portfolio h2 {
+    color: #ffffff;
+}
 
 /* ------- PORTFOLIO PAGE -------- */
 .portfolio-page-content p {
@@ -455,7 +462,6 @@ hr {
     background-size: cover;
     background-position: center;
     padding: 2em 0;
-    font-family: "Cookie", cursive;
 }
 
 .showcase h3 a {
@@ -514,7 +520,7 @@ hr {
 
 /* -------- CONTACT ------------ */
 .contact {
-    background-color: #99ccff;
+    background: radial-gradient(#005580, #004466, #262626);
     padding: 2em 0 5em;
 }
 
