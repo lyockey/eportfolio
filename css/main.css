@@ -40,8 +40,8 @@ h1 a {
 }
 
 #tagline {
-    margin-top: -1.55em;
-    font-size: 1.25em;
+    margin-top: -1.5em;
+    font-size: 1.5em;
     margin-bottom: 0;
 }
 
@@ -130,7 +130,7 @@ nav li a {
 }
 
 nav li a:hover {
-    color: #b6f7a0;
+    color: #9bdb85;
 
 }
 
@@ -140,7 +140,7 @@ nav li a:hover {
 }
 
 .blog-link:hover {
-    color: #ffad33;
+    color: #9bdb85;
 }
 
 /* --------- BANNER INTRO --------- */
@@ -156,7 +156,7 @@ nav li a:hover {
 }
 
 .services-intro {
-    background-image: repeating-linear-gradient(45deg, rgba(255, 173, 51, 0.5), rgba(255, 173, 51, 0.5) 3px, rgba(255, 173, 51, 0.6) 3px, rgba(255, 173, 51, 0.6) 7px), url('../img/bg/php.jpg');
+    background-image: repeating-linear-gradient(45deg, rgba(182, 247, 160, 0.5), rgba(182, 247, 160, 0.5) 3px, rgba(182, 247, 160, 0.6) 3px, rgba(182, 247, 160, 0.6) 7px), url('../img/bg/php.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -169,6 +169,10 @@ nav li a:hover {
 .about h2,
 .services-intro h2 {
     color: #ffffff;
+}
+
+.services-intro h2 {
+    margin-bottom: 0;
 }
 
 .about p,
@@ -344,7 +348,7 @@ nav li a:hover {
 }
 
 .button:hover {
-    background-color: #ffad33;
+    background-color: #9bdb85;
     color: white;
 }
 
@@ -404,9 +408,10 @@ nav li a:hover {
 }
 
 .portfolio-page-content h3 {
-    font-family: "Cookie", cursive;
+    font-family: 'La Belle Aurore', cursive;
     color: #b6f7a0;
     font-size: 2em;
+    margin-bottom: -1.25em;
 }
 
 .portfolio-page-content ul {
@@ -431,8 +436,9 @@ nav li a:hover {
 
 .bio blockquote,
 .resume h3 {
-    color: #b6f7a0;
+    color: #005580;
     font-size: 2em;
+    font-family: 'La Belle Aurore', cursive;
 }
 
 #quote-src {
@@ -565,7 +571,8 @@ hr {
 
 .client_needs h3 {
     font-size: 3em;
-    color: #ffad33;
+    color: #005580;
+    font-family: 'La Belle Aurore', cursive;
 }
 
 .client_needs p,
@@ -575,7 +582,7 @@ hr {
     padding: 0 5em;
 }
 
-.client_needs p:nth-child(4) {
+.client_needs p {
     margin-bottom: 2em;
 }
 
@@ -592,8 +599,7 @@ hr {
 }
 
 .deliverables-title {
-    color: #99ccff;
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 0;
 }
 
@@ -615,7 +621,7 @@ hr {
 }
 
 .pricing h5 > span {
-    color: #ffad33;
+    color: #9bdb85;
 }
 
 

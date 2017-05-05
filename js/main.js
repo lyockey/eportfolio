@@ -76,4 +76,11 @@ $(document).ready(function () {
         ]
     });
 
+    $('.contactIcon').hover(function () {
+        $(this).addClass('floating');
+    },
+    function () {
+        $(this).removeClass('floating');
+    });
+
 }); //END DOC.READY
