@@ -70,7 +70,7 @@ p {
 }
 
 .link {
-    color: #ffb84d;
+    color: #b6f7a0;
 }
 
 .nolink {
@@ -130,12 +130,12 @@ nav li a {
 }
 
 nav li a:hover {
-    color: #ffb84d;
+    color: #b6f7a0;
 
 }
 
 .blog-link {
-    color: #ffb84d;
+    color: #b6f7a0;
     font-weight: bold;
 }
 
@@ -330,7 +330,7 @@ nav li a:hover {
     padding: 1em 0;
     margin-bottom: 0.5em;
     color: #ffffff;
-    background-color: #ffb84d;
+    background-color: #b6f7a0;
     border-radius: 0.5em;
 }
 
@@ -373,7 +373,7 @@ nav li a:hover {
 }
 
 #portfolio-contact {
-    color: #ffb84d;
+    color: #b6f7a0;
 }
 
 #webportfolio,
@@ -405,7 +405,7 @@ nav li a:hover {
 
 .portfolio-page-content h3 {
     font-family: "Cookie", cursive;
-    color: #ffb84d;
+    color: #b6f7a0;
     font-size: 2em;
 }
 
@@ -431,7 +431,7 @@ nav li a:hover {
 
 .bio blockquote,
 .resume h3 {
-    color: #ffb84d;
+    color: #b6f7a0;
     font-size: 2em;
 }
 
@@ -457,7 +457,7 @@ hr {
 
 /* -------- SHOWCASE ----------- */
 .showcase {
-    background-image: repeating-linear-gradient(45deg, rgba(255, 184, 77, 0.8), rgba(255, 184, 77, 0.8) 3px, rgba(255, 184, 77, 0.9) 3px, rgba(255, 184, 77, 0.9) 7px), url('../img/bg/showcase.png');
+    background-image: repeating-linear-gradient(45deg, rgba(182, 247, 160, 0.8), rgba(182, 247, 160, 0.8) 3px, rgba(182, 247, 160, 0.9) 3px, rgba(182, 247, 160, 0.9) 7px), url('../img/bg/showcase.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
